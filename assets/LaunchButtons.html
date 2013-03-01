@@ -1,0 +1,308 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+<title></title>
+</head>
+
+<body class="twoColFixLt">
+
+<div id="container">
+  <div id="sidebar1">
+  <h3><a name='QuickStart'>Quick Start</a></h3>
+<p class=list-1>&bull;&nbsp; <B><a href="wryebash.html#Installation">Installation</a></B>
+<p class=list-1>&bull;&nbsp; <a href="http://www.uesp.net/wiki/Tes4Mod:Wrye_Bash">How To's and FAQs</a>
+<p class=list-1>&bull;&nbsp; <a href="http://forums.bethsoft.com/index.php?/topic/1092258-relz-wrye-bash-thread-no-42/">RELZ Topic</a>
+<p class=list-1>&bull;&nbsp; Download: 
+  <p class=list-2>&bull;&nbsp; <a href="http://www.wryemusings.com/">Wrye Musings</a>
+  <p class=list-2>&bull;&nbsp; <a href="http://tesnexus.com/downloads/file.php?id=22368">TesNexus</a> 
+<p class=list-1>&bull;&nbsp; <a href="wryebash.html#Versions">Change Log</a>
+<p class=empty>&nbsp;</p>
+<h3><a name='Contents'>Contents</a></h3>
+<p class=list-1>&bull;&nbsp; <a href="wryebash.html#Installation">Installation</a></p>
+<p class=list-2>&bull;&nbsp; <a href="wryebash.html#GetandInstall">Get and Install</a></p>
+<p class=list-2>&bull;&nbsp; <a href="wryebash.html#WindowsVista">Windows Vista</a></p>
+<p class=list-2>&bull;&nbsp; <a href="wryebash.html#StartingWryeBash">Starting Wrye Bash</a></p>
+<p class=list-2>&bull;&nbsp; <a href="wryebash.html#IfBashWontStart"><font color=red>If Bash Won't Start</font></a></p>
+<p class=list-2>&bull;&nbsp; <a href="wryebash.html#CommonProblems">Common Problems</a></p>
+<p class=list-2>&bull;&nbsp; <a href="wryebash.html#PythonComponents">Python Components</a></p>
+<p class=list-1>&bull;&nbsp; <a href="wryebash.html#Help">Help!</a></p>
+<p class=list-1>&bull;&nbsp; <a href="wryebash.html#BackingUp">Backing Up</a></p>
+<p class=list-1>&bull;&nbsp; <a href="LaunchButtons.html">Launch Buttons</a></p>
+<p class=list-2>&bull;&nbsp; <a href="#ApplicationButtons">Application Buttons</a></p>
+<p class=list-2>&bull;&nbsp; <a href="#BashOptionButtons">Bash Option Buttons</a></p>
+<p class=list-1>&bull;&nbsp; <a href="wryebash.html#InstallersTab">Installers Tab</a></p>
+<p class=list-2>&bull;&nbsp; <a href="wryebash.html#GettingStarted">Getting Started</a></p>
+<p class=list-2>&bull;&nbsp; <a href="wryebash.html#Overview">Overview</a></p>
+<p class=list-2>&bull;&nbsp; <a href="wryebash.html#PackageDetails">Package Details</a></p>
+<p class=list-2>&bull;&nbsp; <a href="wryebash.html#PackageStructure">Package Structure</a></p>
+<p class=list-2>&bull;&nbsp; <a href="wryebash.html#SkippedFiles">Skipped Files</a></p>
+<p class=list-2>&bull;&nbsp; <a href="wryebash.html#DocFileSweeping">Doc File Sweeping</a></p>
+<p class=list-2>&bull;&nbsp; <a href="wryebash.html#Ordering">Ordering</a></p>
+<p class=list-2>&bull;&nbsp; <a href="wryebash.html#OmodConversionData">Omod Conversion Data</a></p>
+<p class=list-2>&bull;&nbsp; <a href="wryebash.html#BainConversionFiles">Bain Conversion Files</a></p>
+<p class=list-2>&bull;&nbsp; <a href="wryebash.html#BainWizards">Bain Wizards</a></p>
+<p class=list-2>&bull;&nbsp; <a href="wryebash.html#PackageCommands">Package Commands</a></p>
+<p class=list-2>&bull;&nbsp; <a href="wryebash.html#PackageHeaderCommands">Package Header Commands</a></p>
+<p class=list-1>&bull;&nbsp; <a href="wryebash.html#ReplacersTab">Replacers Tab</a></p>
+<p class=list-2>&bull;&nbsp; <a href="wryebash.html#TexturesBSA">Textures BSA</a></p>
+<p class=list-1>&bull;&nbsp; <a href="wryebash.html#ModsTab">Mods Tab</a></p>
+<p class=list-2>&bull;&nbsp; <a href="wryebash.html#ModsList">Mods List</a></p>
+<p class=list-2>&bull;&nbsp; <a href="wryebash.html#ModDetails">Mod Details</a></p>
+<p class=list-2>&bull;&nbsp; <a href="wryebash.html#LoadOrder">Load Order</a></p>
+<p class=list-1>&bull;&nbsp; <a href="wryebash.html#ModsTabCommands">Mods Tab Commands</a></p>
+<p class=list-2>&bull;&nbsp; <a href="wryebash.html#AutoGhost">Auto-Ghost</a></p>
+<p class=list-2>&bull;&nbsp; <a href="wryebash.html#LoadLists">Load Lists</a></p>
+<p class=list-2>&bull;&nbsp; <a href="wryebash.html#ListMods">List Mods</a></p>
+<p class=list-2>&bull;&nbsp; <a href="wryebash.html#DebugMode">Debug Mode</a></p>
+<p class=list-1>&bull;&nbsp; <a href="wryebash.html#ModFileCommands">Mod File Commands</a></p>
+<p class=list-2>&bull;&nbsp; <a href="wryebash.html#FileCommands">File Commands</a></p>
+<p class=list-2>&bull;&nbsp; <a href="wryebash.html#AddMaster">Add Master</a></p>
+<p class=list-2>&bull;&nbsp; <a href="wryebash.html#DecompileAll">Decompile All</a></p>
+<p class=list-2>&bull;&nbsp; <a href="wryebash.html#CopytoEspEsm">Copy to Esp/Esm</a></p>
+<p class=list-2>&bull;&nbsp; <a href="wryebash.html#EspifyEsmifySelf">Espify/Esmify Self</a></p>
+<p class=list-2>&bull;&nbsp; <a href="wryebash.html#EspifyEsmifyMasters">Espify/Esmify Masters</a></p>
+<p class=list-2>&bull;&nbsp; <a href="wryebash.html#ImportFace">Import Face</a></p>
+<p class=list-2>&bull;&nbsp; <a href="wryebash.html#ImportFormids">Import Formids</a></p>
+<p class=list-2>&bull;&nbsp; <a href="wryebash.html#ExportImportEditorIds">Export/Import Editor Ids</a></p>
+<p class=list-2>&bull;&nbsp; <a href="wryebash.html#ExportFactions">Export Factions</a></p>
+<p class=list-2>&bull;&nbsp; <a href="wryebash.html#ExportImportGroups">Export/Import Groups</a></p>
+<p class=list-2>&bull;&nbsp; <a href="wryebash.html#ExportImportItemData">Export/Import Item Data</a></p>
+<p class=list-2>&bull;&nbsp; <a href="wryebash.html#ExportImportNames">Export/Import Names</a></p>
+<p class=list-2>&bull;&nbsp; <a href="wryebash.html#ExportImportNPCLevels">Export/Import NPC Levels</a></p>
+<p class=list-2>&bull;&nbsp; <a href="wryebash.html#ExportRelations">Export Relations</a></p>
+<p class=list-2>&bull;&nbsp; <a href="wryebash.html#ExportImportPrices">Export/Import Prices</a></p>
+<p class=list-2>&bull;&nbsp; <a href="wryebash.html#ExportImportStats">Export/Import Stats</a></p>
+<p class=list-2>&bull;&nbsp; <a href="wryebash.html#ExportImportScripts">Export/Import Scripts</a></p>
+<p class=list-2>&bull;&nbsp; <a href="wryebash.html#ExportImportSpellStats">Export/Import Spell Stats</a></p>
+<p class=list-2>&bull;&nbsp; <a href="wryebash.html#Details">Details</a></p>
+<p class=list-2>&bull;&nbsp; <a href="wryebash.html#ListMastersMod">List Masters (Mod)</a></p>
+<p class=list-2>&bull;&nbsp; <a href="wryebash.html#MarkLevelers">Mark Levelers</a></p>
+<p class=list-2>&bull;&nbsp; <a href="wryebash.html#MarkMergeable">Mark Mergeable</a></p>
+<p class=list-2>&bull;&nbsp; <a href="wryebash.html#NvidiaFogFix">Nvidia Fog Fix</a></p>
+<p class=list-2>&bull;&nbsp; <a href="wryebash.html#RebuildPatch">Rebuild Patch</a></p>
+<p class=list-2>&bull;&nbsp; <a href="wryebash.html#RemoveWorldOrphans">Remove World Orphans</a></p>
+<p class=list-2>&bull;&nbsp; <a href="wryebash.html#UndeleteRefs">Undelete Refs</a></p>
+<p class=list-2>&bull;&nbsp; <a href="wryebash.html#Version08">Version 0.8</a></p>
+<p class=list-1>&bull;&nbsp; <a href="wryebash.html#Balo">Balo</a></p>
+<p class=list-2>&bull;&nbsp; <a href="wryebash.html#FullBalo">Full Balo</a></p>
+<p class=list-2>&bull;&nbsp; <a href="wryebash.html#FullBaloUsage">Full Balo Usage</a></p>
+<p class=list-2>&bull;&nbsp; <a href="wryebash.html#DefaultGroups">Default Groups</a></p>
+<p class=list-2>&bull;&nbsp; <a href="wryebash.html#SemiBalo">Semi-Balo</a></p>
+<p class=list-2>&bull;&nbsp; <a href="wryebash.html#AutoAssigningGroups">Auto-Assigning Groups</a></p>
+<p class=list-1>&bull;&nbsp; <a href="wryebash.html#BashedPatches">Bashed Patches</a></p>
+<p class=list-2>&bull;&nbsp; <a href="wryebash.html#PatchUsage">Patch Usage</a></p>
+<p class=list-2>&bull;&nbsp; <a href="wryebash.html#PatchNotes">Patch Notes</a></p>
+<p class=list-2>&bull;&nbsp; <a href="wryebash.html#BashTags">Bash Tags</a></p>
+<p class=list-2>&bull;&nbsp; <a href="wryebash.html#AliasModNames">Alias Mod Names</a></p>
+<p class=list-2>&bull;&nbsp; <a href="wryebash.html#MergePatches">Merge Patches</a></p>
+<p class=list-2>&bull;&nbsp; <a href="wryebash.html#ReplaceFormIDs">Replace Form IDs</a></p>
+<p class=list-2>&bull;&nbsp; <a href="wryebash.html#MergeFiltering">Merge Filtering</a></p>
+<p class=list-2>&bull;&nbsp; <a href="wryebash.html#ItemInterchangeMode">Item Interchange Mode</a></p>
+<p class=list-2>&bull;&nbsp; <a href="wryebash.html#ImportActors">Import Actors</a></p>
+<p class=list-2>&bull;&nbsp; <a href="wryebash.html#ImportActorsAIPackages">Import Actors: AIPackages</a></p>
+<p class=list-2>&bull;&nbsp; <a href="wryebash.html#ImportActorsAnimations">Import Actors: Animations</a></p>
+<p class=list-2>&bull;&nbsp; <a href="wryebash.html#ImportActorsDeathItems">Import Actors: Death Items</a></p>
+<p class=list-2>&bull;&nbsp; <a href="wryebash.html#ImportActorsSpells">Import Actors: Spells</a></p>
+<p class=list-2>&bull;&nbsp; <a href="wryebash.html#ImportCells">Import Cells</a></p>
+<p class=list-2>&bull;&nbsp; <a href="wryebash.html#ImportFactions">Import Factions</a></p>
+<p class=list-2>&bull;&nbsp; <a href="wryebash.html#ImportGraphics">Import Graphics</a></p>
+<p class=list-2>&bull;&nbsp; <a href="wryebash.html#ImportInventory">Import Inventory</a></p>
+<p class=list-2>&bull;&nbsp; <a href="wryebash.html#ImportNPCFaces">Import NPC Faces</a></p>
+<p class=list-2>&bull;&nbsp; <a href="wryebash.html#ImportNames">Import Names</a></p>
+<p class=list-2>&bull;&nbsp; <a href="wryebash.html#ImportRelations">Import Relations</a></p>
+<p class=list-2>&bull;&nbsp; <a href="wryebash.html#ImportRoads">Import Roads</a></p>
+<p class=list-2>&bull;&nbsp; <a href="wryebash.html#ImportScriptsContents">Import Scripts Contents</a></p>
+<p class=list-2>&bull;&nbsp; <a href="wryebash.html#ImportScripts">Import Scripts</a></p>
+<p class=list-2>&bull;&nbsp; <a href="wryebash.html#ImportSounds">Import Sounds</a></p>
+<p class=list-2>&bull;&nbsp; <a href="wryebash.html#ImportSpellStats">Import Spell Stats</a></p>
+<p class=list-2>&bull;&nbsp; <a href="wryebash.html#ImportStats">Import Stats</a></p>
+<p class=list-2>&bull;&nbsp; <a href="wryebash.html#Globals">Globals</a></p>
+<p class=list-2>&bull;&nbsp; <a href="wryebash.html#TweakActors">Tweak Actors</a></p>
+<p class=list-2>&bull;&nbsp; <a href="wryebash.html#TweakAssorted">Tweak Assorted</a></p>
+<p class=list-2>&bull;&nbsp; <a href="wryebash.html#TweakClothes">Tweak Clothes</a></p>
+<p class=list-2>&bull;&nbsp; <a href="wryebash.html#TweakNames">Tweak Names</a></p>
+<p class=list-2>&bull;&nbsp; <a href="wryebash.html#TweakSettings">Tweak Settings</a></p>
+<p class=list-2>&bull;&nbsp; <a href="wryebash.html#CoblCatalogs">Cobl Catalogs</a></p>
+<p class=list-2>&bull;&nbsp; <a href="wryebash.html#CoblExhaustion">Cobl Exhaustion</a></p>
+<p class=list-2>&bull;&nbsp; <a href="wryebash.html#ContentChecker">Content Checker</a></p>
+<p class=list-2>&bull;&nbsp; <a href="wryebash.html#LeveledLists">Leveled Lists</a></p>
+<p class=list-2>&bull;&nbsp; <a href="wryebash.html#MorphFactions">Morph Factions</a></p>
+<p class=list-2>&bull;&nbsp; <a href="wryebash.html#PowerExhaustion">Power Exhaustion</a></p>
+<p class=list-2>&bull;&nbsp; <a href="wryebash.html#RaceRecords">Race Records</a></p>
+<p class=list-2>&bull;&nbsp; <a href="wryebash.html#SEWorldTests">SEWorld Tests</a></p>
+<p class=list-1>&bull;&nbsp; <a href="wryebash.html#DocBrowser">Doc Browser</a></p>
+<p class=list-2>&bull;&nbsp; <a href="wryebash.html#UsingtheDocBrowser">Using the Doc Browser</a></p>
+<p class=list-2>&bull;&nbsp; <a href="wryebash.html#WikiTextFormat">Wiki Text Format</a></p>
+<p class=list-2>&bull;&nbsp; <a href="wryebash.html#Notes">Notes</a></p>
+<p class=list-2>&bull;&nbsp; <a href="wryebash.html#Suggestions">Suggestions</a></p>
+<p class=list-1>&bull;&nbsp; <a href="wryebash.html#ModChecker">Mod Checker</a></p>
+<p class=list-2>&bull;&nbsp; <a href="wryebash.html#GenericInformation">Generic Information</a></p>
+<p class=list-2>&bull;&nbsp; <a href="wryebash.html#RulesetInformation">Ruleset Information</a></p>
+<p class=list-2>&bull;&nbsp; <a href="wryebash.html#OnlyOneWarnings">Only One Warnings</a></p>
+<p class=list-2>&bull;&nbsp; <a href="wryebash.html#ModGroupInfo">Mod Group Info</a></p>
+<p class=list-2>&bull;&nbsp; <a href="wryebash.html#ModCheckerOptions">Mod Checker Options</a></p>
+<p class=list-1>&bull;&nbsp; <a href="wryebash.html#INIEditsTab">INI Edits Tab</a></p>
+<p class=list-2>&bull;&nbsp; <a href="wryebash.html#INITweaksOptions">INI Tweaks Options</a></p>
+<p class=list-2>&bull;&nbsp; <a href="wryebash.html#TweakFileCommands">Tweak File Commands</a></p>
+<p class=list-1>&bull;&nbsp; <a href="wryebash.html#SavesTab">Saves Tab</a></p>
+<p class=list-2>&bull;&nbsp; <a href="wryebash.html#SavesList">Saves List</a></p>
+<p class=list-2>&bull;&nbsp; <a href="wryebash.html#BackupFiles">Backup Files</a></p>
+<p class=list-2>&bull;&nbsp; <a href="wryebash.html#SaveDetails">Save Details</a></p>
+<p class=list-1>&bull;&nbsp; <a href="wryebash.html#SaveProfiles">Save Profiles</a></p>
+<p class=list-2>&bull;&nbsp; <a href="wryebash.html#CreateEditProfiles">Create/Edit Profiles</a></p>
+<p class=list-2>&bull;&nbsp; <a href="wryebash.html#MovingSavegames">Moving Savegames</a></p>
+<p class=list-1>&bull;&nbsp; <a href="wryebash.html#SaveFileCommands">Save File Commands</a></p>
+<p class=list-2>&bull;&nbsp; <a href="wryebash.html#LoadMasters">Load Masters</a></p>
+<p class=list-2>&bull;&nbsp; <a href="wryebash.html#ListMastersSave">List Masters (Save)</a></p>
+<p class=list-2>&bull;&nbsp; <a href="wryebash.html#DiffMasters">Diff Masters</a></p>
+<p class=list-2>&bull;&nbsp; <a href="wryebash.html#Statistics">Statistics</a></p>
+<p class=list-2>&bull;&nbsp; <a href="wryebash.html#OBSEStatistics">.OBSE Statistics</a></p>
+<p class=list-2>&bull;&nbsp; <a href="wryebash.html#DeleteSpells">Delete Spells</a></p>
+<p class=list-2>&bull;&nbsp; <a href="wryebash.html#ImportFace">Import Face</a></p>
+<p class=list-2>&bull;&nbsp; <a href="wryebash.html#ImportNPCLevels">Import NPC Levels</a></p>
+<p class=list-2>&bull;&nbsp; <a href="wryebash.html#SetNumberofUsesforWeaponEnchantments">Set Number of Uses for Weapon Enchantments</a></p>
+<p class=list-2>&bull;&nbsp; <a href="wryebash.html#RenameEnchanted">Rename Enchanted</a></p>
+<p class=list-2>&bull;&nbsp; <a href="wryebash.html#RenamePotions">Rename Potions</a></p>
+<p class=list-2>&bull;&nbsp; <a href="wryebash.html#RenameSpells">Rename Spells</a></p>
+<p class=list-2>&bull;&nbsp; <a href="wryebash.html#ReweighPotions">Reweigh Potions</a></p>
+<p class=list-2>&bull;&nbsp; <a href="wryebash.html#UpdateNPCLevels">Update NPC Levels</a></p>
+<p class=list-2>&bull;&nbsp; <a href="wryebash.html#RemoveBloat">Remove Bloat</a></p>
+<p class=list-2>&bull;&nbsp; <a href="wryebash.html#RepairAbomb">Repair Abomb</a></p>
+<p class=list-2>&bull;&nbsp; <a href="wryebash.html#RepairFactions">Repair Factions</a></p>
+<p class=list-2>&bull;&nbsp; <a href="wryebash.html#RepairFbomb">Repair Fbomb</a></p>
+<p class=list-2>&bull;&nbsp; <a href="wryebash.html#RepairHair">Repair Hair</a></p>
+<p class=list-1>&bull;&nbsp; <a href="wryebash.html#FaceImport">Face Import</a></p>
+<p class=list-2>&bull;&nbsp; <a href="wryebash.html#ImporttoSave">Import to Save</a></p>
+<p class=list-2>&bull;&nbsp; <a href="wryebash.html#ImporttoMod">Import to Mod</a></p>
+<p class=list-1>&bull;&nbsp; <a href="wryebash.html#ScreenshotsTab">Screenshots Tab</a></p>
+<p class=list-2>&bull;&nbsp; <a href="wryebash.html#ScreenshotsCommands">Screenshots Commands</a></p>
+<p class=list-2>&bull;&nbsp; <a href="wryebash.html#ScreenshotCommands">Screenshot Commands</a></p>
+<p class=list-1>&bull;&nbsp; <a href="wryebash.html#PMArchiveTab">PM Archive Tab</a></p>
+<p class=list-2>&bull;&nbsp; <a href="wryebash.html#ImportArchives">Import Archives</a></p>
+<p class=list-2>&bull;&nbsp; <a href="wryebash.html#SearchingPMs">Searching PMs</a></p>
+<p class=list-2>&bull;&nbsp; <a href="wryebash.html#OtherNotes">Other Notes</a></p>
+<p class=list-1>&bull;&nbsp; <a href="wryebash.html#PeopleTab">People Tab</a></p>
+<p class=list-2>&bull;&nbsp; <a href="wryebash.html#General">General</a></p>
+<p class=list-2>&bull;&nbsp; <a href="wryebash.html#AddDeletePeople">Add/Delete People</a></p>
+<p class=list-2>&bull;&nbsp; <a href="wryebash.html#ImportPeople">Import People</a></p>
+<p class=list-2>&bull;&nbsp; <a href="wryebash.html#ExportPeople">Export People</a></p>
+<p class=list-2>&bull;&nbsp; <a href="wryebash.html#Karma">Karma</a></p>
+<p class=list-1>&bull;&nbsp; <a href="wryebash.html#OblivionesmSwapping">Oblivion.esm Swapping</a></p>
+<p class=list-2>&bull;&nbsp; <a href="wryebash.html#SwappingSetup">Swapping Setup</a></p>
+<p class=list-2>&bull;&nbsp; <a href="wryebash.html#VersionIndicators">Version Indicators</a></p>
+<p class=list-2>&bull;&nbsp; <a href="wryebash.html#ModTabSwapping">Mod Tab Swapping</a></p>
+<p class=list-2>&bull;&nbsp; <a href="wryebash.html#SaveTabSwapping">Save Tab Swapping</a></p>
+<p class=list-1>&bull;&nbsp; <a href="wryebash.html#Extending">Extending</a></p>
+<p class=list-2>&bull;&nbsp; <a href="wryebash.html#Internationalization">Internationalization</a></p>
+<p class=list-1>&bull;&nbsp; <a href="wryebash.html#Versions">Versions</a></p>
+
+
+  <!-- end wryebash.html#sidebar1 --></div>
+  <div id="mainContent">
+    <h2><a name='LaunchButtons'>Launch Buttons</a></h2>
+<p>At the bottom left of Bash's main window you'll find launch buttons for Oblivion and other applications (if they're installed). You'll also find one or two toggle buttons. 
+    <p class=empty>&nbsp;</p>
+<h3><a name='ApplicationButtons'>Application Buttons</a></h3>
+<p class=list-1>&bull;&nbsp; <B>Overview:</B>
+  <p class=list-2>&bull;&nbsp; Each of the application buttons will be present if the corresponding application is present in the Oblivion install directory or in the directory specified in the bash.ini.
+  <p class=list-2>&bull;&nbsp; You can also control if some of them show up or not through the bash.ini - by settings the sections for Modeling or texturing or audio tools to 0.
+  <p class=list-2>&bull;&nbsp; Tes4Gecko & Oblivion Book Creator will be available if the javaw.exe is present in Windows\System32 and their .jar file is present in Oblivion install directory or for OBC in the data directory.
+  <p class=list-2>&bull;&nbsp; Tes4Edit, Tes4Trans and Tes4view are just different modes of Tes4Edit.exe and will be available if Tes4Edit.exe is available.
+    <p class=list-3>&bull;&nbsp; You can also control if some of the modes show up or not through the bash.ini - by setting  <B>bShowTes4...</B> under <B>[Tool Options]</B>
+  <p class=list-2>&bull;&nbsp; Running BOSS through here will automatically deghost and reghost your mods if you use ghosting. While doing so it may appear to stall but it hasn't.
+  <p class=list-2>&bull;&nbsp; Tip: If you don't want certain launcher icons to show up you can place a semi-colon ; in the path in the bash.ini after you set up your paths.
+    <p class=list-3>&bull;&nbsp; Example: sPhotoshopPath=;C:\Program Files\Adobe\Photoshop 7.0\Photoshop.exe
+<p class=list-1>&bull;&nbsp; <B>Applications:</B>
+  <p class=list-2>&bull;&nbsp; Oblivion (Main Oblivion executable, not the launcher.) 16 <img src="images/oblivion16.png" width="16" height="16" border="0"> 32  <img src="images/oblivion32.png" width="32" height="32" border="0">
+  <p class=list-2>&bull;&nbsp; <a href="http://cs.elderscrolls.com/constwiki/index.php/The_Elder_Scrolls_Construction_Set">TES Construction Set</a> 16 <img src="images/tescs16.png" width="16" height="16" border="0"> 32  <img src="images/tescs32.png" width="32" height="32" border="0">
+  <p class=list-2>&bull;&nbsp; <B>General Tools</B>
+    <p class=list-3>&bull;&nbsp; <a href="http://www.tesnexus.com/downloads/file.php?id=2097">Oblivion Mod Manager</a> 16 <img src="images/OBMM16.png" width="16" height="16" border="0"> 32 <img src="images/OBMM32.png" width="32" height="32" border="0">
+    <p class=list-3>&bull;&nbsp; <a href="http://www.invision.tesalliance.org/forums/index.php?/files/file/132-insanitys-oblivion-launcher/">Insanity Sorrow's Oblivion Launcher</a> 16 <img src="images/ISOBL16.png" width="16" height="16" border="0"> 32  <img src="images/ISOBL32.png" width="32" height="32" border="0">
+    <p class=list-3>&bull;&nbsp; <a href="http://www.invision.tesalliance.org/forums/index.php?/files/file/130-insanitys-readme-generator/">Insanity Sorrow's Readme Generator</a> 16 <img src="images/Insanity'sReadmeGenerator16.png" width="16" height="16" border="0"> 32  <img src="images/Insanity'sReadmeGenerator32.png" width="32" height="32" border="0">
+    <p class=list-3>&bull;&nbsp; <a href="http://www.invision.tesalliance.org/forums/index.php?/files/file/131-random-name-generator/">Insanity Sorrow's Random Name Generator</a> 16 <img src="images/Insanity'sRNG16.png" width="16" height="16" border="0"> 32  <img src="images/Insanity'sRNG32.png" width="32" height="32" border="0">
+    <p class=list-3>&bull;&nbsp; <a href="http://www.invision.tesalliance.org/forums/index.php?/files/file/128-random-npc/">Insanity Sorrow's Random NPC Generator</a> 16 <img src="images/RandomNPC16.png" width="16" height="16" border="0"> 32  <img src="images/RandomNPC32.png" width="32" height="32" border="0">
+    <p class=list-3>&bull;&nbsp; <a href="http://www.tesnexus.com/downloads/file.php?id=7808">Oblivion Face Exchange Lite</a> 16 <img src="images/OblivionFaceExchangerLite16.png" width="16" height="16" border="0"> 32  <img src="images/OblivionFaceExchangerLite32.png" width="32" height="32" border="0">
+    <p class=list-3>&bull;&nbsp; <a href="http://www.invision.tesalliance.org/forums/index.php?/files/file/280-oblivion-mod-list-generator/">Oblivion Mod List Generator</a> 16 <img src="images/ModListGenerator16.png" width="16" height="16" border="0"> 32  <img src="images/ModListGenerator32.png" width="32" height="32" border="0">
+    <p class=list-3>&bull;&nbsp; <a href="http://www.invision.tesalliance.org/forums/index.php?app=downloads&showfile=258">Oblivion Book Creator</a> 16 <img src="images/OblivionBookCreator16.png" width="16" height="16" border="0"> 32  <img src="images/OblivionBookCreator32.png" width="32" height="32" border="0">
+    <p class=list-3>&bull;&nbsp; <a href="http://www.tesnexus.com/downloads/file.php?id=3311">BSA Commander</a> 16 <img src="images/BSACommander16.png" width="16" height="16" border="0"> 32  <img src="images/BSACommander32.png" width="32" height="32" border="0">
+    <p class=list-3>&bull;&nbsp; <a href="http://www.tesnexus.com/downloads/file.php?id=8489">Tes4Files</a> 16 <img src="images/tes4files16.png" width="16" height="16" border="0"> 32  <img src="images/tes4files32.png" width="32" height="32" border="0">
+    <p class=list-3>&bull;&nbsp; <a href="http://www.tesnexus.com/downloads/file.php?id=8665">Tes4Gecko</a> 16 <img src="images/TES4Gecko16.png" width="16" height="16" border="0"> 32  <img src="images/TES4Gecko32.png" width="32" height="32" border="0">
+    <p class=list-3>&bull;&nbsp; <a href="http://www.tesnexus.com/downloads/file.php?id=11536">Tes4View</a> 16 <img src="images/tes4view16.png" width="16" height="16" border="0"> 32  <img src="images/tes4view32.png" width="32" height="32" border="0">
+    <p class=list-3>&bull;&nbsp; <a href="http://www.tesnexus.com/downloads/file.php?id=11536">Tes4Edit</a> 16 <img src="images/TES4Edit16.png" width="16" height="16" border="0"> 32  <img src="images/TES4Edit32.png" width="32" height="32" border="0">
+    <p class=list-3>&bull;&nbsp; <a href="http://www.tesnexus.com/downloads/file.php?id=11536">Tes4Trans</a> 16 <img src="images/TES4Trans16.png" width="16" height="16" border="0"> 32  <img src="images/TES4Trans32.png" width="32" height="32" border="0">
+    <p class=list-3>&bull;&nbsp; <a href="http://www.tesnexus.com/downloads/file.php?id=15781">Tes4LodGen</a> 16 <img src="images/Tes4LODGen16.png" width="16" height="16" border="0"> 32 <img src="images/Tes4LODGen32.png" width="32" height="32" border="0">
+    <p class=list-3>&bull;&nbsp; <a href="http://www.tesnexus.com/downloads/file.php?id=20516">BOSS</a> 16 <img src="images/Boss16.png" width="16" height="16" border="0"> 32  <img src="images/Boss32.png" width="32" height="32" border="0">
+  <p class=list-2>&bull;&nbsp; <B>Model Tools</B>
+    <p class=list-3>&bull;&nbsp; <a href="http://usa.autodesk.com/adsk/servlet/pc/index?siteID=123112&id=13799652">AutoCad</a> 16 <img src="images/AutoCad16.png" width="16" height="16" border="0"> 32  <img src="images/AutoCad32.png" width="32" height="32" border="0">
+    <p class=list-3>&bull;&nbsp; <a href="http://www.blender.org">Blender</a> 16 <img src="images/Blender16.png" width="16" height="16" border="0"> 32  <img src="images/Blender32.png" width="32" height="32" border="0">
+    <p class=list-3>&bull;&nbsp; <a href="http://www.artofillusion.org/">Art of Illusion</a> 16 <img src="images/ArtOfIllusion16.png" width="16" height="16" border="0"> 32  <img src="images/ArtOfIllusion32.png" width="32" height="32" border="0">
+    <p class=list-3>&bull;&nbsp; <a href="http://www.turbosquid.com/gmax">GMax</a> 16 <img src="images/gmax16.png" width="16" height="16" border="0"> 32  <img src="images/gmax32.png" width="32" height="32" border="0">
+    <p class=list-3>&bull;&nbsp; <a href="http://usa.autodesk.com/adsk/servlet/pc/index?siteID=123112&id=13577897">Maya</a> 16 <img src="images/Maya16.png" width="16" height="16" border="0"> 32  <img src="images/Maya32.png" width="32" height="32" border="0">
+    <p class=list-3>&bull;&nbsp; <a href="http://usa.autodesk.com/adsk/servlet/pc/index?siteID=123112&id=13567410">3ds Max</a> 16 <img src="images/3dsMax16.png" width="16" height="16" border="0"> 32  <img src="images/3dsMax32.png" width="32" height="32" border="0">
+    <p class=list-3>&bull;&nbsp; <a href="http://chumbalum.swissquake.ch/">MilkShape 3D</a> 16 <img src="images/Milkshape3D16.png" width="16" height="16" border="0"> 32  <img src="images/Milkshape3D32.png" width="32" height="32" border="0">
+    <p class=list-3>&bull;&nbsp; <a href="http://www.wings3d.com/">Wings3D</a> 16 <img src="images/Wings3D16.png" width="16" height="16" border="0"> 32  <img src="images/Wings3D32.png" width="32" height="32" border="0">
+    <p class=list-3>&bull;&nbsp; <a href="http://niftools.sourceforge.net/wiki/NifTools">Nifskope</a> 16 <img src="images/nifskope16.png" width="16" height="16" border="0"> 32 <img src="images/nifskope32.png" width="32" height="32" border="0"> 
+  <p class=list-2>&bull;&nbsp; <B>Texture Tools</B>
+    <p class=list-3>&bull;&nbsp; <a href="http://icofx.ro/anifx/index.html">AniFX</a>16 <img src="images/AniFX16.png" width="16" height="16" border="0"> 32  <img src="images/AniFX32.png" width="32" height="32" border="0">
+    <p class=list-3>&bull;&nbsp; <a href="http://www.thebest3d.com/dogwaffle/free/">Dogwaffle</a> 16 <img src="images/Dogwaffle16.png" width="16" height="16" border="0"> 32  <img src="images/Dogwaffle32.png" width="32" height="32" border="0">
+    <p class=list-3>&bull;&nbsp; <a href="http://www.artweaver.de/">Artweaver</a> 16 <img src="images/artweaver16.png" width="16" height="16" border="0"> 32  <img src="images/artweaver32.png" width="32" height="32" border="0">
+    <p class=list-3>&bull;&nbsp; <a href="http://eliteforce2.filefront.com/file/DDS_Converter;29412">DDSConverter</a> 16 <img src="images/DDSConverter16.png" width="16" height="16" border="0"> 32  <img src="images/DDSConverter32.png" width="32" height="32" border="0">
+    <p class=list-3>&bull;&nbsp; <a href="http://www.spiralgraphics.biz/genetica.htm">Genetica</a> 16 <img src="images/Genetica16.png" width="16" height="16" border="0"> 32  <img src="images/Genetica32.png" width="32" height="32" border="0">
+    <p class=list-3>&bull;&nbsp; <a href="http://www.spiralgraphics.biz/viewer/">Genetica Viewer</a> 16 <img src="images/GeneticaViewer16.png" width="16" height="16" border="0"> 32  <img src="images/GeneticaViewer32.png" width="32" height="32" border="0">
+    <p class=list-3>&bull;&nbsp; <a href="http://www.gimp.org/downloads/">GIMP</a> 16 <img src="images/gimp16.png" width="16" height="16" border="0"> 32  <img src="images/gimp32.png" width="32" height="32" border="0">
+    <p class=list-3>&bull;&nbsp; <a href="http://www.gimpshop.com/">Gimp Shop</a> 16 <img src="images/GIMPShop16.png" width="16" height="16" border="0"> 32  <img src="images/GIMPShop32.png" width="32" height="32" border="0">
+    <p class=list-3>&bull;&nbsp; <a href="http://icofx.ro/index.html">IcoFX</a> 16 <img src="images/IcoFX16.png" width="16" height="16" border="0"> 32  <img src="images/IcoFX32.png" width="32" height="32" border="0">
+    <p class=list-3>&bull;&nbsp; <a href="http://www.inkscape.org/">Inkscape</a> 16 <img src="images/Inkscape16.png" width="16" height="16" border="0"> 32  <img src="images/Inkscape32.png" width="32" height="32" border="0">
+    <p class=list-3>&bull;&nbsp; <a href="http://www.irfanview.com/">Irfan View</a> 16 <img src="images/IrfanView16.png" width="16" height="16" border="0"> 32  <img src="images/IrfanView32.png" width="32" height="32" border="0">
+    <p class=list-3>&bull;&nbsp; <a href="http://www.xnview.com/">XnView</a> 16 <img src="images/XnView16.png" width="16" height="16" border="0"> 32 <img src="images/XnView32.png" width="32" height="32" border="0">
+    <p class=list-3>&bull;&nbsp; <a href="http://www.faststone.org/">FastStone Image Viewer</a> 16 <img src="images/FastStoneImageViewer16.png" width="16" height="16" border="0"> 32 <img src="images/FastStoneImageViewer32.png" width="32" height="32" border="0">
+    <p class=list-3>&bull;&nbsp; <a href="http://www.getpaint.net/download.html">Paint.NET</a> 16 <img src="images/paint.net16.png" width="16" height="16" border="0"> 32  <img src="images/paint.net32.png" width="32" height="32" border="0">
+    <p class=list-3>&bull;&nbsp; <a href="http://www.adobe.com/">Photoshop</a> 16 <img src="images/photoshop16.png" width="16" height="16" border="0"> 32  <img src="images/photoshop32.png" width="32" height="32" border="0">
+    <p class=list-3>&bull;&nbsp; <a href="http://pixelstudiopro.com/">Pixel Studio Pro</a> 16 <img src="images/PixelStudioPro16.png" width="16" height="16" border="0"> 32  <img src="images/PixelStudioPro32.png" width="32" height="32" border="0">
+    <p class=list-3>&bull;&nbsp; <a href="http://www.pixarra.com/">Twisted Brush</a> 16 <img src="images/TwistedBrush16.png" width="16" height="16" border="0"> 32  <img src="images/TwistedBrush32.png" width="32" height="32" border="0">
+    <p class=list-3>&bull;&nbsp; <a href="http://www.photoscape.org/ps/main/index.php">PhotoScape</a> 16 <img src="images/PhotoScape16.png" width="16" height="16" border="0"> 32  <img src="images/PhotoScape32.png" width="32" height="32" border="0">
+    <p class=list-3>&bull;&nbsp; <a href="http://www.photobie.com/">Photobie Design Studio</a> 16 <img src="images/Photobie16.png" width="16" height="16" border="0"> 32  <img src="images/Photobie32.png" width="32" height="32" border="0">
+    <p class=list-3>&bull;&nbsp; <a href="http://www.photofiltre.com/">PhotoFiltre</a> 16 <img src="images/PhotoFiltre16.png" width="16" height="16" border="0"> 32  <img src="images/PhotoFiltre32.png" width="32" height="32" border="0">
+    <p class=list-3>&bull;&nbsp; <a href="http://www.corel.com/servlet/Satellite/us/en/Product/1184951547051">PaintShop Photo Pro</a> 16 <img src="images/PaintShopProX316.png" width="16" height="16" border="0"> 32  <img src="images/PaintShopProX332.png" width="32" height="32" border="0">
+  <p class=list-2>&bull;&nbsp; <B>Audio Tools</B>
+    <p class=list-3>&bull;&nbsp; <a href="http://audacity.sourceforge.net/">Audacity</a> 16 <img src="images/audacity16.png" width="16" height="16" border="0"> 32  <img src="images/audacity32.png" width="32" height="32" border="0">
+    <p class=list-3>&bull;&nbsp; <a href="http://www.processtext.com/abcmp3wav.html">ABC Amber Audio Converter</a> 16 <img src="images/ABCAmberAudioConverter16.png" width="16" height="16" border="0"> 32  <img src="images/ABCAmberAudioConverter32.png" width="32" height="32" border="0">
+  <p class=list-2>&bull;&nbsp; <B>Misc</B>
+    <p class=list-3>&bull;&nbsp; <a href="http://www.fraps.com/download.php">Fraps</a> 16 <img src="images/fraps16.png" width="16" height="16" border="0"> 32  <img src="images/fraps32.png" width="32" height="32" border="0">
+    <p class=list-3>&bull;&nbsp; <a href="http://www.tesnexus.com/downloads/file.php?id=3961">Interactive Map of Cyrodiil and Shivering Isles</a> 16 <img src="images/InteractiveMapofCyrodiil16.png" width="16" height="16" border="0"> 32  <img src="images/InteractiveMapofCyrodiil32.png" width="32" height="32" border="0">
+    <p class=list-3>&bull;&nbsp; <a href="http://www.logitech.com/index.cfm/434/285&cl=za">Logitech G11 Keyboard Profiler</a> 16 <img src="images/LogitechKeyboard16.png" width="16" height="16" border="0"> 32  <img src="images/LogitechKeyboard32.png" width="32" height="32" border="0">
+    <p class=list-3>&bull;&nbsp; <a href="http://www.mediamonkey.com/">Media Monkey</a> 16 <img src="images/MediaMonkey16.png" width="16" height="16" border="0"> 32  <img src="images/MediaMonkey32.png" width="32" height="32" border="0">
+    <p class=list-3>&bull;&nbsp; <a href="http://notepad-plus.sourceforge.net/">Notepad++</a> 16 <img src="images/notepad++16.png" width="16" height="16" border="0"> 32  <img src="images/notepad++32.png" width="32" height="32" border="0">
+    <p class=list-3>&bull;&nbsp; <a href="http://www.steampowered.com/">Steam</a> 16 <img src="images/Steam16.png" width="16" height="16" border="0"> 32  <img src="images/Steam32.png" width="32" height="32" border="0">
+    <p class=list-3>&bull;&nbsp; <a href="http://www.evga.com/">EVGA Precision</a> 16 <img src="images/EVGAPrecision16.png" width="16" height="16" border="0"> 32  <img src="images/EVGAPrecision32.png" width="32" height="32" border="0">
+    <p class=list-3>&bull;&nbsp; <a href="http://winmerge.org/">WinMerge</a> 16 <img src="images/WinMerge16.png" width="16" height="16" border="0"> 32  <img src="images/WinMerge32.png" width="32" height="32" border="0">
+    <p class=list-3>&bull;&nbsp; <a href="http://freemind.sourceforge.net/wiki/index.php/Main_Page">FreeMind</a> 16 <img src="images/FreeMind16.png" width="16" height="16" border="0"> 32 <img src="images/FreeMind32.png" width="32" height="32" border="0">
+    <p class=list-3>&bull;&nbsp; <a href="http://filezilla-project.org/">Filezilla</a> 16 <img src="images/FileZilla16.png" width="16" height="16" border="0"> 32  <img src="images/FileZilla32.png" width="32" height="32" border="0">
+    <p class=list-3>&bull;&nbsp; <a href="http://www.egg-of-time.us/portal/index.php?option=com_content&view=article&id=1825">Egg Translator</a> 16 <img src="images/EggTranslator16.png" width="16" height="16" border="0"> 32  <img src="images/EggTranslator32.png" width="32" height="32" border="0">
+    <p class=list-3>&bull;&nbsp; <a href="http://www.radgametools.com/bnkdown.htm">RAD Video Tools</a> 16 <img src="images/RADVideoTools16.png" width="16" height="16" border="0"> 32  <img src="images/RADVideoTools32.png" width="32" height="32" border="0">
+    <p class=empty>&nbsp;</p>
+  <p class=list-2>&bull;&nbsp; 18 Custom buttons
+    <BR><img src="images/custombuttons.png" border="0">
+    <p class=list-3>&bull;&nbsp; These buttons can be set to any executable (.exe), Java (.jar), or double-clickable file (as in Explorer).
+    <p class=list-3>&bull;&nbsp; You can also set the arguments for any type of Custom button - see ini for full instructions.
+    <p class=empty>&nbsp;</p>
+<h3><a name='BashOptionButtons'>Bash Option Buttons</a></h3>
+<p class=list-1>&bull;&nbsp; OBSE 16off <img src="images/checkbox_green_off.png" width="16" height="16" border="0"> 16on <img src="images/checkbox_green_on.png" width="16" height="16" border="0"> 32off <img src="images/checkbox_green_off_32.png" width="32" height="32" border="0"> 32on <img src="images/checkbox_green_on_32.png" width="32" height="32" border="0">
+  <p class=list-2>&bull;&nbsp; When checked this will launch OBSE when either the Oblivion or TESCS buttons are clicked. 
+<p class=list-1>&bull;&nbsp; Auto-Quit 16off <img src="images/checkbox_red_off.png" width="16" height="16" border="0"> 16on <img src="images/checkbox_red_x.png" width="16" height="16" border="0"> 32off <img src="images/checkbox_red_off_32.png" width="32" height="32" border="0"> 32on <img src="images/checkbox_red_x_32.png" width="32" height="32" border="0">
+  <p class=list-2>&bull;&nbsp; If checked this will cause Bash to quit when launching Oblivion. This is useful if you're concerned about memory usage.
+<p class=list-1>&bull;&nbsp; BashMon 16 <img src="images/bashmon16.png" width="16" height="16" border="0"> 32 <img src="images/bashmon32.png" width="32" height="32" border="0">
+  <p class=list-2>&bull;&nbsp; This launches bashmon.py in a command shell window. This is for use with Breeze582000's Seducers/Succubi mod and Wrye's Morph mod. 
+  <p class=list-2>&bull;&nbsp; For more info, see <a href="http://forums.bethsoft.com/?showtopic=746499">[WIPZ] Succubi Race</a>.
+<p class=list-1>&bull;&nbsp; Help 16 <img src="images/help16.png" width="16" height="16" border="0"> 32 <img src="images/help32.png" width="32" height="32" border="0">
+  <p class=list-2>&bull;&nbsp; Show this help file in the default web browser.
+<p class=list-1>&bull;&nbsp; Doc Browser 16 <img src="images/DocBrowser16.png" width="16" height="16" border="0"> 32 <img src="images/DocBrowser32.png" width="32" height="32" border="0">
+  <p class=list-2>&bull;&nbsp; Show the <a href="wryebash.html#DocBrowser">Doc Browser</a>. (You can also view the doc browser by double clicking on any mod file in the Mods tab.)
+<p class=list-1>&bull;&nbsp; Mod Checker 16 <img src="images/ModChecker16.png" width="16" height="16" border="0"> 32 <img src="images/ModChecker32.png" width="32" height="32" border="0">
+  <p class=list-2>&bull;&nbsp; Show the <a href="wryebash.html#ModChecker">Mod Checker</a>.
+
+	<!-- end wryebash.html#mainContent --></div>
+	<!-- This clearing element should immediately follow the wryebash.html#mainContent div in order to force the wryebash.html#container div to contain all child floats --><br class="clearfloat" />
+<!-- end wryebash.html#container --></div>
+</body>
+</html>
